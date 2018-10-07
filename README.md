@@ -1,1 +1,1 @@
-# Responsive-layout-unit-2
+# Responsive layout unit 2
