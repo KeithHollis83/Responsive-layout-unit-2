@@ -1,1 +1,184 @@
+/*general Styles*/
 
+
+* {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #444;
+}
+
+body {
+  background-color:white;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+a:hover {
+  color: lightgreen;
+  transition: 0.15s;
+}
+
+p {
+		color: grey;
+}
+
+h1 {	
+			margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*Header and Nav Styles*/
+
+nav {
+	text-align: center;
+}
+nav li{
+	list-style: none;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: white;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+header,
+footer{
+	padding: 20px;
+	background-color: #fafafa;
+}
+
+.banner-img {
+					padding: 20px 0;
+					width: 75%;
+}
+
+.banner-txt {
+			color: grey;
+			padding: 30px 0;
+}
+
+.banner-text a {
+				color: lightgreen;
+}
+
+/*Portfolio Styles*/
+
+.container {
+			padding: 20px 10px;
+			background-color: white;
+}
+
+article {
+			padding: 25px 0;
+			color: white;
+}
+
+article h3 {
+			margin: 20px 0;
+			text-transform: capitalize;
+}
+
+article p {
+				padding: 10px;
+}
+/*Skills Styles*/
+/*contact Styles*/
+
+
+/*footer Styles*/
+
+footer {
+		padding: 30px 20px;
+}
+
+.footer-nav {
+			margin-top: 40px;
+			padding: 20px 10px;
+			border-top: 1px solid lightgrey;
+}
+
+.footer-txt {
+		padding: 30px 0;
+}
+
+.copyright {
+				float: left;
+}
+
+.back-to-top {
+				float: right;
+				text-transform: uppercase
+}
+
+.address {
+			margin-bottom: 20px;
+}
+
+
+
+/*Breakpoint 768px*/
+@media (min-width:768px) {
+				
+		header nav ul li {
+    display: inline;
+    background: none;
+    padding:0;
+    margin: 30px;
+  }
+				
+				header {
+								padding-bottom: 40px;
+				}
+				
+				nav {
+						margin: 50px 0;
+				}
+				nav h1 {
+						margin-bottom: 30px
+				}
+			
+				.banner-txt {
+						float: left;
+						width: 55%;
+						text-align: left;
+						padding: 1em;
+				}
+				
+				.banner-img {
+						float: right;
+						width: 45%;
+				}
+				
+				.container {
+						padding: 40px 15px;
+				}
+				
+				article {
+							padding: 5px;
+							float: left;
+							width: 50%;
+							margin-bottom: 30px
+				}
+		
+			.footer-txt {
+				}
+
+				
+}
