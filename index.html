@@ -1,75 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keith Hollis Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-					<header id="top" class="clearfix">
+<html lang="en">
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Website Title -->
+  <title>Keith's Portfolio</title>
+  <!-- Linkings -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
 
-						<nav>
-								<h1 class="logo">Keith Hollis</h1>
-								<ul class="main-nav">
-										<li><a href="/home">Home</a></li>
-										<li><a href="/portfolio">Portfolio</a></li>
-										<li><a href="/contact">Contact</a></li>
-									</ul>
-						</nav>
-
-									<img class="banner-img" src="img/responsive-layout-profile.png" alt="responsive image">
-									<p class="banner-txt">Hi I am a front end developer who loves responsive design &amp; css. I recently finished a degree in front end web development at Treehouse &amp; am excited to put all my newskills to use !</p>
-					</header>
-
-					<main class="portfolio clearfix" id="portfolio">
-						<div class="container">
-											<h2>Portfolio</h2>
-
-											<article>
-												<img src="img/portfolio-1.png" alt="Marketing Page Image" />
-												<h3>Marketing Page</h3>
-												<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-										</article>
-										<article>
-												<img src="img/portfolio-2.png" alt="Search Page Image" />
-												<h3>Search Page</h3>
-												<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-										</article>
-										<article>
-												<img src="img/portfolio-3.png" alt="Travel App Image" />
-												<h3>Travel App</h3>
-												<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-										</article>
-										<article>
-												<img src="img/portfolio-4.png" alt="Map of Favorite Spots Image" />
-												<h3>Map of Favorite Spots</h3>
-												<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-										</article>
-										<article>
-												<img src="img/portfolio-5.png" alt="Photo Gallery Image" />
-												<h3>Photo Gallery</h3>
-												<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-										</article>
-										<article>
-												<img src="img/portfolio-6.png" alt="Calculator Image" />
-												<h3>Calculator</h3>
-												<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-										</article>
+  <div class="intro clearfix">
+    <!-- Navigation Section -->
+    <header class="main-header" id="top">
+      <div class="container clearfix">
+        <h1 class="title"><a href="#top">Keith Hollis</a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-					</main>
-					
-					<footer>
-								<h2>Contact</h2>
-								<p class="footer-txt">If you're interested in chatting or want to know more about what I've been up to, I'd love to hear from you!</p>
-									<p class="address">Phone: <strong>+1&lpar;111&rpar; 555-1234</strong></p>
-								<p class="address">Email: <strong><a href="mailto:kplkeith@icloud.com">kplkeith@icloud.com</a></strong></p>
-								<div class="footer-nav clearfix">
-										<span class="copyright">&copy;2018 Keith Hollis</span>
-										<span class="back-to-top"><a href="#top">Back to Top</a></span>
-								</div>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+      <div class="container">
+        <img class="profile-img" src="images/responsive-layout-profile.png" alt="Picture of Keith Hollis">
+        <p class="mission">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to out all my skills to use!</p>
+      </div>
+    </div>
+  </div> <!-- Intro Close-->
+
+  <!-- Projects Section -->
+  <div class="container clearfix">
+    <h2 class="portfolio-title" id="portfolio">Portfolio</h2>
+    <!-- Portfolio Project #1 -->
+    <div class="project-one col">
+      <img class="project-images" src="images/portfolio-1.png" alt="Marketing Page">
+      <h3 class="project-titles">Marketing Page</h3>
+      <p class="project-paragraphs">This project shows the front page of a marketing website meant for a specific business I'm interest in.</p>
+    </div>
+
+    <!-- Portfolio Project #2 -->
+    <div class="project-two col">
+      <img class="project-images" src="images/portfolio-2.png" alt="Search Page">
+      <h3 class="project-titles">Search Page</h3>
+      <p class="project-paragraphs">This project searches throught a specific database to find information that the user is trying to look up.</p>
+    </div>
+
+    <!-- Portfolio Project #3 -->
+    <div class="project-three col">
+      <img class="project-images" src="images/portfolio-3.png" alt="Travel App">
+      <h3 class="project-titles">Travel App</h3>
+      <p class="project-paragraphs">This project compares travel times based on different transportation methods and tell you the best one.</p>
+    </div>
+
+    <!-- Portfolio Project #4 -->
+    <div class="project-four col">
+      <img class="project-images" src="images/portfolio-4.png" alt="Map of Favorite Spots">
+      <h3 class="project-titles">Map of Favorite Spots</h3>
+      <p class="project-paragraphs">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+    </div>
+
+    <!-- Portfolio Project #5 -->
+    <div class="project-five col">
+      <img class="project-images" src="images/portfolio-5.png" alt="Photo Gallery">
+      <h3 class="project-titles">Photo Gallery</h3>
+      <p class="project-paragraphs">This project shows pictures from a recent trip to the viewer and allows them to easily naviage through photos.</p>
+    </div>
+
+    <!-- Portfolio Project #6 -->
+    <div class="project-six col">
+      <img class="project-images" src="images/portfolio-6.png" alt="Calculator">
+      <h3 class="project-titles">Calculator</h3>
+      <p class="project-paragraphs">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+    </div>
+  </div> <!-- Container Close -->
+
+  <!-- Skills Sections -->
+  <div class="skills">
+    <h2 class="skills-title" id="skills">Skills</h2>
+    
+    <ul class="skills-list">
+      <li><img class="skills-image" src="images/html.svg" alt="Html Icon"></li>
+      <li><img class="skills-image" src="images/css.svg" alt="CSS Icon"></li>
+      <li><img class="skills-image" src="images/javascript.svg" alt="JS Icon"></li>
+    </ul>
+    	<p>More to come.</p>
+  </div>
+
+  <!-- Footer Sections -->
+  <footer class="main-footer" id="contact">
+    <div class="container clearfix">
+      <h3 class="footer-title">CONTACT</h3>
+      <p class="footer-paragraph">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <p class="footer-phone">Phone <span>+1 (009) 123-1234</span></p>
+      <p class="footer-email">Email <span>email@yoursite.com</span></p>
+      <hr>
+      <h4 class="footer-name"><a href="#top">Keith Hollis</a></h4>
+      <h4 class="footer-top"><a href="#top">BACK TO TOP</a></h4>
+        <ul class="footer-nav">
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#top">HOME</a></li>
+        </ul>
+    </div> <!-- Container Close -->
   </footer>
-  </body>
+
+</body>
+
 </html>
-	

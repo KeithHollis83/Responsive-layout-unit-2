@@ -1,184 +1,321 @@
-/*general Styles*/
-
+/* ================================= 
+  Base Element Styles
+==================================== */
 
 * {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #444;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color:white;
+  font-family: 'Raleway', sans-serif;
+		color: darkslategray;
 }
 
 a {
   text-decoration: none;
-  transition: 0.15s;
 }
 
-a:hover {
-  color: lightgreen;
-  transition: 0.15s;
+ul {
+  list-style-type: none; 
+}
+
+h1, h2, h3, span {
+	color: darkslategray;
 }
 
 p {
-		color: grey;
+	color: lightslategray;
 }
 
-h1 {	
-			margin-bottom: 20px;
+
+/* ================================= 
+ Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.title {
+  font-size: 2.25em;
+  padding-top: 15px;
 }
 
-img {
+.main-nav {
+  margin-top: 20px;
+}
+
+.title a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  color: #07575b;
+}
+
+.main-nav a {
+  font-size: 1.35em;
+  text-transform: uppercase;
+  background-color:  #b8d9e1;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: white;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner {
+  margin-top: 55px;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.intro {
+  background-color:#c4dfe6;
+  text-align: center;
+}
+
+.profile-img {
+  width: 80%;
+		
+}
+
+.mission {
+  line-height: 1.6em;
+  font-size: 1.2em;
+  color: darkslategrey;
+  margin-top: 30px;
+  padding-bottom: 55px;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.project-images {
   width: 100%;
 }
 
+.project-titles {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 30px 0;
+	color: darkslategray;
+}
+
+.project-paragraphs {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding-bottom: 40px;
+}
+
+.skills {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.skills-title {
+  margin-bottom: 10px;
+		border-bottom: 1px solid #c4dfe6;
+		width: 30%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+}
+
+.skills-list {
+		padding-top: 50px;
+  padding-bottom: 30px;
+		margin: 0 auto;
+}
+
+.skills-list li {
+  padding: 10px 0;
+	display: inline;
+}
+
+.skills img {
+	width:80px;
+}
+
+
+.main-footer {
+  background-color: #c4dfe6;
+  padding: 30px 0;
+}
+
+.footer-title,
+.footer-paragraph,
+.footer-phone,
+.footer-email {
+  text-align: center;
+	color: #07575b;
+}
+
+.footer-title {
+  padding: 30px 0;
+}
+
+.footer-paragraph,
+.footer-phone,
+.footer-email {
+  line-height: 1.4em;
+  font-size: 1.1em;
+  color: #07575b;
+}
+
+.footer-paragraph {
+  padding-bottom: 30px;
+}
+
+.footer-phone {
+  padding-bottom: 15px;
+}
+
+.footer-email {
+  padding-bottom: 35px;
+}
+
+.footer-phone span,
+.footer-email span {
+  font-weight: bold;
+}
+
+.footer-name,
+.footer-top {
+  margin: 30px 0;
+}
+
+.footer-name a,
+.footer-top a {
+  color:#07575b;
+}
+
+.footer-name {
+  float: left;
+}
+
+.footer-top {
+  float: right;
+}
+
+.footer-nav li {
+  display: none;
+}
+
+.footer-nav li a {
+  color: #07575b;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* Tablet Sizing */
+@media (min-width: 768px) {
+
+  .intro {
+    padding-bottom: 50px;
+  }
+
+  .main-nav {
+    text-align: center;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .profile-img {
+    float: right;
+    width: 40%;
+  }
+
+  .mission {
+    float: left;
+    text-align: left;
+    width: 55%;
+    font-size: 1.2em;
+  }
+	
+				.skills img {
+				width:100px;
+			}
+
+  .col {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .footer-paragraph {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    float: right;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 0 10px;
+    font-weight: bold;
+				color: 
+  }
+  .footer-top {
+    display: none;
+  }
+	
+	
+}
+
+/* Desktop Sizing */
+@media (min-width: 1024px) {
+  .title {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .mission {
+    width: 55%;
+    font-size: 1.4em;
+  }
+
+  .col {
+    width: 33%;
+    padding: 10px;
+  }
+
+  .footer-paragraph {
+    width: 50%;
+  }
+}
+
+/* ---- Float clearfix ---- */
 
 .clearfix::after {
-  content: "";
-  clear: both;
+  content: " ";
   display: table;
+  clear: both;
 }
 
-
-/*Header and Nav Styles*/
-
-nav {
-	text-align: center;
-}
-nav li{
-	list-style: none;
-	padding: 10px;
-	text-transform: uppercase;
-	background-color: white;
-	margin: 5px;
-	border-radius: 3px;
-}
-
-header,
-footer{
-	padding: 20px;
-	background-color: #fafafa;
-}
-
-.banner-img {
-					padding: 20px 0;
-					width: 75%;
-}
-
-.banner-txt {
-			color: grey;
-			padding: 30px 0;
-}
-
-.banner-text a {
-				color: lightgreen;
-}
-
-/*Portfolio Styles*/
-
-.container {
-			padding: 20px 10px;
-			background-color: white;
-}
-
-article {
-			padding: 25px 0;
-			color: white;
-}
-
-article h3 {
-			margin: 20px 0;
-			text-transform: capitalize;
-}
-
-article p {
-				padding: 10px;
-}
-/*Skills Styles*/
-/*contact Styles*/
-
-
-/*footer Styles*/
-
-footer {
-		padding: 30px 20px;
-}
-
-.footer-nav {
-			margin-top: 40px;
-			padding: 20px 10px;
-			border-top: 1px solid lightgrey;
-}
-
-.footer-txt {
-		padding: 30px 0;
-}
-
-.copyright {
-				float: left;
-}
-
-.back-to-top {
-				float: right;
-				text-transform: uppercase
-}
-
-.address {
-			margin-bottom: 20px;
-}
-
-
-
-/*Breakpoint 768px*/
-@media (min-width:768px) {
-				
-		header nav ul li {
-    display: inline;
-    background: none;
-    padding:0;
-    margin: 30px;
-  }
-				
-				header {
-								padding-bottom: 40px;
-				}
-				
-				nav {
-						margin: 50px 0;
-				}
-				nav h1 {
-						margin-bottom: 30px
-				}
-			
-				.banner-txt {
-						float: left;
-						width: 55%;
-						text-align: left;
-						padding: 1em;
-				}
-				
-				.banner-img {
-						float: right;
-						width: 45%;
-				}
-				
-				.container {
-						padding: 40px 15px;
-				}
-				
-				article {
-							padding: 5px;
-							float: left;
-							width: 50%;
-							margin-bottom: 30px
-				}
-		
-			.footer-txt {
-				}
-
-				
-}
