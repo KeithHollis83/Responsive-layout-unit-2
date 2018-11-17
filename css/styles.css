@@ -26,6 +26,8 @@ ul {
 }
 
 h1, h2, h3, span {
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
 	color: darkslategray;
 }
 
@@ -108,6 +110,10 @@ p {
 
 .project-images {
   width: 100%;
+}
+
+.project-images::hover{
+	
 }
 
 .project-titles {
