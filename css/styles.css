@@ -110,9 +110,12 @@ p {
 
 .project-images {
   width: 100%;
+	transition: box-shadow 0.3s ease-in-out;
 }
 
-.project-images::hover{
+img.project-images:hover{
+	box-shadow: 10px 10px 5px #aaaaaa;
+	
 	
 }
 
